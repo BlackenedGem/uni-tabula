@@ -1,0 +1,24 @@
+#window {
+	-fx-background-color: antiquewhite;
+}
+	
+
+#dice-box { 
+	-fx-border-color: gray
+}
+
+#table-moves .table-column {
+  -fx-alignment: CENTER;
+}
+
+#location-box {
+	-fx-border-color: gray;
+	-fx-border-width: 1;
+	-fx-background-color: blanchedalmond;
+}
+
+#location-name {
+	-fx-border-color: gray;
+	-fx-border-width: 0 0 1 0;
+	-fx-background-color: tan;
+}

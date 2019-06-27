@@ -1,0 +1,52 @@
+Scores (the closer to 50% the less accurate the number)
+-----------------------------------------------------------------
+Iterative improvements:
+1a and 1b are equally bad
+2 beat 1 ~98% of the time
+3 beat 2 ~70% of the time
+4 beat 3 ~63% of the time
+5 beat 4 ~60% of the time
+6 beat 5 ~55% of the time
+7 beat 6 ~52% of the time
+8 beat 7 ~53% of the time
+9 beat 8 ~60% of the time
+10 beat 9 ~53% of the time
+11 beat 10 ~56% of the time
+12 beat 11 ~51.5% of the time
+13 beat 12 ~51.5% of the time
+14 beat 13 ~51.5% of the time
+15 beat 14 ~51% of the time
+16 beat 15 ~51.5% of the time
+17 beat 16 ~51% of the time
+18 beat 17 ~51% of the time
+
+Larger improvements:
+7 beat 2 ~97% of the time
+15 beat 7 ~70% of the time
+
+Summary of iterations
+-----------------------------------------------------------------
+1a picked the first turn
+1b randomly selects a turn
+2 minimised the number of lone pieces
+3 tried to knock off pieces
+4 tried to create doubles, added weighting system
+5 tried to get pieces out from the starting location 
+6 weighted knocked off pieces depending on their location
+7 small bonus for getting pieces home, penalty for not using the total sum of the dice
+8 fixed and improved doubles calculation, bonus for having doubles next to it
+9 reduced the penalty for lone pieces if they are behind the opponents last piece
+10 added more weight if doubles were at the initial locations and also if the opponent was there
+11 changed the weighting for lone pieces if they were behind the opponents last piece
+12 revamped the dice weighting system for increased granularity
+13 adjust the weights for doubles (made joined up doubles more important)
+14 changed weighting of lone pieces depending on their quarter around the board
+15 tweaked the weights added in 14
+16 added weighting for locations that have more than 2 pieces
+17 tweaked the weights of lone pieces
+18 tweaked the weights of starting chains
+
+Notes
+-----------------------------------------------------------------
+Implementation of the number of doubles (4) was incorrect from 4-7
+Testing had a very minor bias for the first 10 iterations (one player went first every time)

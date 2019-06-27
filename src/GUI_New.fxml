@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox id="window" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="260.0" spacing="5.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUINew">
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+   <children>
+      <HBox minHeight="-Infinity" prefHeight="30.0" prefWidth="280.0" spacing="10.0">
+         <children>
+            <Label minHeight="-Infinity" minWidth="-Infinity" text="Game name:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets top="2.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="gameName" />
+         </children>
+      </HBox>
+      <HBox prefHeight="30.0" prefWidth="200.0" spacing="10.0">
+         <children>
+            <Label minHeight="-Infinity" minWidth="-Infinity" text="Player 1:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets top="2.0" />
+               </padding>
+            </Label>
+            <ChoiceBox fx:id="player1" prefWidth="180.0" />
+         </children>
+      </HBox>
+      <HBox prefHeight="30.0" prefWidth="200.0" spacing="10.0">
+         <children>
+            <Label minHeight="-Infinity" minWidth="-Infinity" text="Player 2:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets top="2.0" />
+               </padding>
+            </Label>
+            <ChoiceBox fx:id="player2" prefWidth="180.0" />
+         </children>
+      </HBox>
+      <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#createGame" text="CREATE GAME" />
+   </children>
+</VBox>
